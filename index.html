@@ -1,204 +1,44 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رؤيا | رفيقك الذكي لتفسير الأحلام</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-bg: #0a0e1b;
-            --secondary-bg: #161b2d;
-            --accent-gold: #d4af37;
-            --text-light: #e0e0e0;
-            --text-dim: #a0a0a0;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Cairo', sans-serif;
-            background-color: var(--primary-bg);
-            color: var(--text-light);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-
-        /* الهيدر */
-        header {
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(10, 14, 27, 0.95);
-            position: fixed;
-            width: 90%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-        }
-
-        .logo {
-            font-family: 'Amiri', serif;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: var(--accent-gold);
-            text-decoration: none;
-        }
-
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--accent-gold);
-        }
-
-        /* قسم البطل (Hero Section) */
-        .hero {
-            padding: 150px 5% 100px;
-            text-align: center;
-            background: radial-gradient(circle at center, #1a233a 0%, #0a0e1b 100%);
-        }
-
-        .hero h1 {
-            font-family: 'Amiri', serif;
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            color: var(--accent-gold);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: var(--text-dim);
-        }
-
-        .btn-download {
-            display: inline-block;
-            background-color: var(--accent-gold);
-            color: var(--primary-bg);
-            padding: 15px 40px;
-            border-radius: 30px;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .btn-download:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-        }
-
-        /* المميزات */
-        .features {
-            padding: 80px 5%;
-            background-color: var(--secondary-bg);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .feature-card {
-            background: var(--primary-bg);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid rgba(212, 175, 55, 0.1);
-        }
-
-        .feature-card h3 {
-            color: var(--accent-gold);
-            margin-bottom: 15px;
-        }
-
-        /* سياسة الخصوصية */
-        .privacy {
-            padding: 80px 10%;
-            background-color: var(--primary-bg);
-        }
-
-        .privacy h2 {
-            text-align: center;
-            color: var(--accent-gold);
-            font-family: 'Amiri', serif;
-        }
-
-        .privacy-box {
-            background: var(--secondary-bg);
-            padding: 40px;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            color: var(--text-dim);
-            border-right: 4px solid var(--accent-gold);
-        }
-
-        /* التذييل */
-        footer {
-            padding: 40px;
-            text-align: center;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            color: var(--text-dim);
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            header { flex-direction: column; text-align: center; }
-            nav { margin-top: 15px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Roya – فسر حلمك بنفسك وبهدوء</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roya تطبيق لتفسير الأحلام بأسلوب إنساني هادئ مع مفكرة شخصية.">
+  <style>
+    body{margin:0;font-family:Arial;background:#0b1220;color:#fff;text-align:center}
+    .hero{padding:60px 20px}
+    .btn{display:inline-block;background:#d4af37;color:#000;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:bold}
+    .shots img{width:200px;margin:10px;border-radius:12px}
+    footer{margin-top:40px;padding:20px;font-size:14px;color:#aaa}
+    a{color:#d4af37}
+  </style>
 </head>
 <body>
 
-    <header>
-        <a href="#" class="logo">رؤيا - Roya</a>
-        <nav>
-            <a href="#features">المميزات</a>
-            <a href="#privacy">الخصوصية</a>
-            <a href="#download">التحميل</a>
-        </nav>
-    </header>
+<div class="hero">
+  <img src="assets/logo.png" width="120"><br><br>
+  <h1>Roya</h1>
+  <p>فسر حلمك بنفسك وبهدوء</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.freegesh.taawil">
+    حمّل التطبيق من Google Play
+  </a>
+</div>
 
-    <section class="hero" id="download">
-        <h1>"نَبِّئْنَا بِتَأْوِيلِهِ"</h1>
-        <p>اكتشف أسرار أحلامك عبر دمج حكمة التراث العربي مع أحدث تقنيات الذكاء الاصطناعي. تجربة صوتية فريدة بخصوصية تامة.</p>
-        <a href="#" class="btn-download">قريباً على Google Play</a>
-    </section>
+<h2>كيف يعمل Roya؟</h2>
+<p>اكتب حلمك → اختر شعورك → استلم التفسير الإنساني</p>
 
-    <section class="features" id="features">
-        <div class="feature-card">
-            <h3>🎙️ التحدث المباشر</h3>
-            <p>لا داعي للكتابة الطويلة، فقط تحدث وسرد حلمك بصوتك وسيقوم التطبيق بتحويله بدقة.</p>
-        </div>
-        <div class="feature-card">
-            <h3>👤 شخصيات المفسرين</h3>
-            <p>اختر من بين شخصيات متعددة: الشيخ الوقور، المحلل النفسي، أو الحكيم الشعبي.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🔒 خصوصية مطلقة</h3>
-            <p>أحلامك ملكك وحدك. يتم تخزين السجل محلياً على جهازك ولا نقوم بمشاركة بياناتك مع أي طرف.</p>
-        </div>
-    </section>
+<div class="shots">
+  <img src="assets/s1.png">
+  <img src="assets/s2.png">
+  <img src="assets/s3.png">
+  <img src="assets/s4.png">
+</div>
 
-    <section class="privacy" id="privacy">
-        <h2>سياسة الخصوصية وإخلاء المسؤولية</h2>
-        <div class="privacy-box">
-            <p><strong>1. الخصوصية:</strong> نحن في "رؤيا" نلتزم بحماية بياناتك. نصوص الأحلام تُعالج لتقديم التفسير فقط، وسجل الأحلام يُحفظ في قاعدة بيانات هاتفك (Room) ولا نملك صلاحية الوصول إليه.</p>
-            <p><strong>2. إخلاء المسؤولية:</strong> هذا التطبيق يقدّم تأويلاً تقريبيًا للرؤى بناءً على معطيات تقنية وثقافية، ولا يُعد حكمًا شرعيًا أو غيبيًا قطعيًا، والتأويل يظل في دائرة الظن، والله أعلم.</p>
-            <p><strong>3. البيانات التقنية:</strong> نستخدم الميكروفون لتحويل الصوت إلى نص (Speech-to-Text) عبر خدمات Google، ولا نقوم بتخزين الملفات الصوتية في سيرفراتنا.</p>
-            <p>باستخدامك للتطبيق، فإنك توافق على هذه البنود.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>جميع الحقوق محفوظة &copy; 2024 تطبيق رؤيا (Roya) | صُنع بشغف لخدمة التراث</p>
-    </footer>
+<footer>
+  <a href="privacy.html">سياسة الخصوصية</a> |
+  <a href="terms.html">شروط الاستخدام</a>
+</footer>
 
 </body>
 </html>
